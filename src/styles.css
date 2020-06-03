@@ -9,7 +9,7 @@ body {
 .phone {
   width: 300px;
   height: 600px;
-  background-color: #ebebeb;
+  background-color: #eee;
   border: 10px solid #ffffff;
   border-radius: 35px;
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
@@ -29,7 +29,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin: 0px 10px 30px 10px;
+  margin: 0px 10px 25px 10px;
   font-size: 12px;
   font-weight: 700;
 }
@@ -39,25 +39,86 @@ body {
 }
 
 .vertual-picture {
-  margin: 50px 0px 50px 15px;
-  display: flex;
-  justify-content: space-between;
+  margin: 0px 5px 18px 22px;
   height: 100%;
 }
 
-.picture .picture__title {
+.vertual-picture .pictures {
+  width: 300px;
+  height: 180px;
   position: relative;
-  margin: auto 0;
-  bottom: 45px;
-  left: 20px;
-  right: 0px;
-  font-size: 15px;
-  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.picture .picture__title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
   color: white;
+  text-shadow: 2px 2px 6px gray;
+}
+
+.pictures .picture:nth-child(1) {
+  background-image: linear-gradient(
+      rgba(241, 242, 246, 0.2),
+      rgb(0, 0, 0, 0.5) 90%
+    ),
+    url(image/homecafe.jpg);
+  border-radius: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 80px;
+}
+
+.pictures .picture:nth-child(2) {
+  background-image: linear-gradient(
+      rgba(241, 242, 246, 0.2),
+      rgb(0, 0, 0, 0.5) 90%
+    ),
+    url(image/homebaking.jpg);
+  border-radius: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 80px;
+  position: relative;
+  left: 15px;
+}
+
+.pictures .picture:nth-child(3) {
+  background-image: linear-gradient(
+      rgba(241, 242, 246, 0.2),
+      rgb(0, 0, 0, 0.5) 90%
+    ),
+    url(image/ade.jpg);
+  border-radius: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 80px;
+}
+
+.pictures .picture:nth-child(4) {
+  background-image: linear-gradient(
+      rgba(241, 242, 246, 0.2),
+      rgb(0, 0, 0, 0.5) 90%
+    ),
+    url(image/vegan.jpg);
+  border-radius: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 80px;
+  position: relative;
+  left: 15px;
 }
 
 .other {
-  margin: 0px 10px 30px 10px;
+  margin: 0px 10px 10px 10px;
 }
 
 .other .other-column {
@@ -73,6 +134,13 @@ body {
   background-color: white;
   padding: 10px;
   font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list__recipes i {
+  color: #ea606e;
 }
 
 .other .other__list .list__recipes .recipes_title {
@@ -80,16 +148,16 @@ body {
   font-weight: 700;
 }
 
-.nav .nav__list {
-  width: 100%;
-  height: 100%;
-  width: 300px;
-  color: grey;
+.nav .nav__lists {
   display: flex;
   justify-content: space-around;
-  align-content: center;
-  background-color: white;
-  border-radius: 10px;
-  margin-right: 80px;
-  padding: 10px;
+}
+
+.nav__lists .nav__list a {
+  text-decoration: none;
+  color: #111919;
+}
+
+.nav__lists .nav__list:nth-child(2) a {
+  color: #ea606e;
 }
